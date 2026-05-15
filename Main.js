@@ -79,6 +79,6 @@ form.addEventListener("submit", (event) => {
     const onFormPage = ["index.html", "login.html"].includes(currentFile);
 
     if(onFormPage && isAllValid()){
-        window.location.href = "move-app.html";
+        window.location.href = "index.html";
     }
 });
