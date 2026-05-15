@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1e8eb;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form-controller{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-controller label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* INPUT */
+.form-controller input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FOCUS */
+.form-controller input:focus{
+    outline: none;
+    border-color: #637be3;
+}
+
+/* ICONS (DEFAULT HIDDEN) */
+.form-controller i{
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    visibility: hidden;
+}
+
+/* COLORS */
+.form-controller i.fa-check{
+    color: green;
+}
+
+.form-controller i.fa-times{
+    color: red;
+}
+
+/* SUCCESS */
+.form-controller.success input{
+    border: 1px solid green;
+}
+
+.form-controller.success i.fa-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+/* ERROR */
+.form-controller.error input{
+    border: 1px solid red;
+}
+
+.form-controller.error i.fa-times{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+/* ERROR TEXT */
+.form-controller small{
+    color: red;
+    visibility: hidden;
+    font-size: 12px;
+}
+
+.form-controller.error small{
+    visibility: visible;
+}
+
+/* BUTTON */
+.btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #637be3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #4a5fc1;
+}
