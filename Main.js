@@ -76,7 +76,7 @@ form.addEventListener("submit", (event) => {
     checkPasswordsMatch(password, confirmPassword);
 
     const currentFile = window.location.pathname.split("/").pop();
-    const onFormPage = currentFile === "index.html";
+    const onFormPage = ["index.html", "login.html"].includes(currentFile);
 
     if(onFormPage && isAllValid()){
         window.location.href = "move-app.html";

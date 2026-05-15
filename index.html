@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form-validation</title>
-    <link rel="stylesheet" href="valid.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>movie-app</title>
+    <link rel="stylesheet" href="stayl.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>login/Registration</h1>
-        <form class="form" id="form">
+    <header>
+        <h2>Movie Apps</h2>
 
-            <div class="form-controller ">
-               <label for="username">Username</label>
-               <input type="text" name="" id="username" class="username">
-               <i class="fa fa-check"></i>
-               <i class="fa fa-times"></i>
-               <small>error message</small>
-            </div>
-              <div class="form-controller ">
-                <label for="email">Email</label>
-               <input type="text" name="" id="email" class="email">
-               <i class="fa fa-check"></i>
-               <i class="fa fa-times"></i>
-               <small>error message</small>
-            </div>
-              <div class="form-controller">
-                <label for="password">Password</label>
-               <input type="password" name="" id="password" class="password">
-               <i class="fa fa-check"></i>
-               <i class="fa fa-times"></i>
-               <small>error message</small>
-            </div>
-              <div class="form-controller">
-                <label for="confirm-password">Confirm Password</label>
-               <input type="password" name="" id="confirm-password" class="confirm-password">
-               <i class="fa fa-check"></i>
-               <i class="fa fa-times"></i>
-               <small>error message</small>
-            </div>
-                <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
-    <script src="Main.js">
-    </script>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="m">
+            <h2>Jungle Cruise</h2>
+            <img src="./image1.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur <br>
+            adipisicing elit. Accusantium voluptas <br>
+            dolorum non corrupti ea accusamus.</p>
+        </section>
+
+        <section class="m2">
+            <h2>Action Movie</h2>
+            <img src="./image2.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur <br>
+            adipisicing elit. Accusantium voluptas <br>
+            dolorum non corrupti ea accusamus.</p>
+        </section>
+
+        <section class="m3">
+            <h2>Damsel Movie</h2>
+            <img src="./image3.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur <br>
+            adipisicing elit. Accusantium voluptas <br>
+            dolorum non corrupti ea accusamus.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 by Amiir casaaf. All Rights Reserved</p>
+    </footer>
+
+    <script src="Main.js"></script>
 </body>
 </html>
